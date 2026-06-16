@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 430" width="480" height="430" role="img" aria-label="לוח בקרה פיננסי">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5efe2"/></linearGradient>
+    <linearGradient id="barN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f4028"/><stop offset="1" stop-color="#2a2114"/></linearGradient>
+    <linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4b46c"/><stop offset="1" stop-color="#c99a3c"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#15120b" flood-opacity=".22"/></filter>
+    <filter id="sh2" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#15120b" flood-opacity=".18"/></filter>
+  </defs>
+
+  <circle cx="446" cy="158" r="6" fill="#e4b46c" opacity=".55"/>
+  <circle cx="26" cy="120" r="9" fill="#4f4028" opacity=".4"/>
+  <circle cx="58" cy="58" r="4" fill="#e4b46c" opacity=".55"/>
+
+  <rect x="44" y="64" width="392" height="300" rx="26" fill="url(#card)" filter="url(#sh)"/>
+
+  <rect x="300" y="96" width="96" height="13" rx="6" fill="#2a2114"/>
+  <rect x="324" y="118" width="72" height="9" rx="4" fill="#cfc6b6"/>
+  <rect x="70" y="92" width="66" height="27" rx="13" fill="#c99a3c" fill-opacity=".16"/>
+  <text x="103" y="106" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="#9c7529">Q2</text>
+
+  <line x1="72" y1="330" x2="408" y2="330" stroke="#e9e2d4" stroke-width="2"/>
+
+  <rect x="88"  y="240" width="40" height="90"  rx="8" fill="url(#barN)"/>
+  <rect x="152" y="200" width="40" height="130" rx="8" fill="url(#barN)"/>
+  <rect x="216" y="220" width="40" height="110" rx="8" fill="url(#barN)"/>
+  <rect x="280" y="165" width="40" height="165" rx="8" fill="url(#barN)"/>
+  <rect x="344" y="120" width="40" height="210" rx="8" fill="url(#barG)"/>
+
+  <polyline points="108,250 172,210 236,225 300,175 364,120" fill="none" stroke="#c99a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="108" cy="250" r="5" fill="#fff" stroke="#c99a3c" stroke-width="3"/>
+  <circle cx="172" cy="210" r="5" fill="#fff" stroke="#c99a3c" stroke-width="3"/>
+  <circle cx="236" cy="225" r="5" fill="#fff" stroke="#c99a3c" stroke-width="3"/>
+  <circle cx="300" cy="175" r="5" fill="#fff" stroke="#c99a3c" stroke-width="3"/>
+  <circle cx="364" cy="120" r="5" fill="#fff" stroke="#c99a3c" stroke-width="3"/>
+
+  <g filter="url(#sh2)">
+    <rect x="316" y="26" width="130" height="56" rx="15" fill="#fff"/>
+    <circle cx="346" cy="54" r="16" fill="#c99a3c" fill-opacity=".15"/>
+    <path d="M346 47l8 9h-4.5v6h-7v-6H338z" fill="#9c7529"/>
+    <text x="404" y="55" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="17" fill="#2a2114">+24%</text>
+    <rect x="372" y="62" width="64" height="6" rx="3" fill="#ddd5c5"/>
+  </g>
+
+  <g filter="url(#sh2)">
+    <rect x="20" y="320" width="106" height="62" rx="15" fill="#fff"/>
+    <circle cx="50" cy="351" r="18" fill="#2a2114"/>
+    <text x="50" y="352" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#e4b46c">%</text>
+    <rect x="74" y="342" width="42" height="8" rx="4" fill="#2a2114"/>
+    <rect x="74" y="356" width="28" height="7" rx="3.5" fill="#cfc6b6"/>
+  </g>
+</svg>

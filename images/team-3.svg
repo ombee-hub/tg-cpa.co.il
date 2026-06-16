@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 332" width="320" height="332" role="img" aria-label="דיוקן שותף">
+  <defs>
+    <linearGradient id="t3bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2f1d"/><stop offset="1" stop-color="#15120b"/></linearGradient>
+    <linearGradient id="t3b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dccdaf"/><stop offset="1" stop-color="#b6a886"/></linearGradient>
+    <pattern id="t3d" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.8" fill="#ffffff" opacity=".06"/></pattern>
+    <clipPath id="t3c"><rect width="320" height="332"/></clipPath>
+  </defs>
+  <g clip-path="url(#t3c)">
+    <rect width="320" height="332" fill="url(#t3bg)"/>
+    <rect width="320" height="332" fill="url(#t3d)"/>
+    <circle cx="160" cy="138" r="94" fill="#ffffff" opacity=".05"/>
+    <circle cx="160" cy="138" r="94" fill="none" stroke="#ecc77f" stroke-opacity=".55" stroke-width="2"/>
+    <circle cx="160" cy="116" r="42" fill="url(#t3b)"/>
+    <path d="M92 332 C92 246 122 210 160 210 C198 210 228 246 228 332 Z" fill="url(#t3b)"/>
+    <path d="M160 210 l16 26 -16 36 -16 -36 z" fill="#b88a32"/>
+  </g>
+</svg>

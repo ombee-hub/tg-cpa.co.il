@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 572" width="520" height="572" role="img" aria-label="המשרד — דוחות וביקורת">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2f1d"/><stop offset="1" stop-color="#15120b"/></linearGradient>
+    <linearGradient id="arep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3ede0"/></linearGradient>
+    <linearGradient id="abarN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f4028"/><stop offset="1" stop-color="#2a2114"/></linearGradient>
+    <linearGradient id="abarG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4b46c"/><stop offset="1" stop-color="#c99a3c"/></linearGradient>
+    <linearGradient id="seal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4b46c"/><stop offset="1" stop-color="#b88a32"/></linearGradient>
+    <pattern id="adots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#ffffff" opacity=".055"/></pattern>
+    <filter id="as" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0c0a05" flood-opacity=".4"/></filter>
+    <filter id="as2" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0c0a05" flood-opacity=".35"/></filter>
+  </defs>
+
+  <rect width="520" height="572" fill="url(#abg)"/>
+  <rect width="520" height="572" fill="url(#adots)"/>
+  <circle cx="430" cy="86" r="130" fill="none" stroke="#e4b46c" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="70" cy="500" r="80" fill="none" stroke="#4f4028" stroke-opacity=".6" stroke-width="2"/>
+
+  <!-- back card (angled) -->
+  <rect x="170" y="118" width="220" height="300" rx="18" fill="#43381f" transform="rotate(-6 280 268)"/>
+
+  <!-- main report card -->
+  <rect x="118" y="150" width="284" height="324" rx="20" fill="url(#arep)" filter="url(#as)"/>
+  <rect x="266" y="186" width="118" height="15" rx="7" fill="#2a2114"/>
+  <rect x="136" y="183" width="66" height="22" rx="11" fill="#c99a3c" fill-opacity=".18"/>
+  <rect x="160" y="228" width="224" height="9" rx="4" fill="#ddd6c6"/>
+  <rect x="196" y="250" width="188" height="9" rx="4" fill="#e7e1d3"/>
+  <rect x="240" y="272" width="144" height="9" rx="4" fill="#e7e1d3"/>
+  <line x1="136" y1="300" x2="384" y2="300" stroke="#ece6d8" stroke-width="2"/>
+
+  <rect x="158" y="375" width="34" height="60"  rx="7" fill="url(#abarN)"/>
+  <rect x="206" y="345" width="34" height="90"  rx="7" fill="url(#abarN)"/>
+  <rect x="254" y="360" width="34" height="75"  rx="7" fill="url(#abarN)"/>
+  <rect x="302" y="320" width="34" height="115" rx="7" fill="url(#abarN)"/>
+  <rect x="350" y="294" width="34" height="141" rx="7" fill="url(#abarG)"/>
+  <polyline points="175,372 223,342 271,358 319,318 367,292" fill="none" stroke="#c99a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- seal -->
+  <g filter="url(#as2)">
+    <circle cx="120" cy="446" r="36" fill="url(#seal)"/>
+    <path d="M104 446l11 11 21-22" fill="none" stroke="#15120b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- floating mini stat -->
+  <g filter="url(#as2)">
+    <rect x="316" y="108" width="132" height="58" rx="15" fill="#fff"/>
+    <circle cx="346" cy="137" r="16" fill="#c99a3c" fill-opacity=".15"/>
+    <path d="M346 130l8 9h-4.5v6h-7v-6H338z" fill="#9c7529"/>
+    <text x="406" y="138" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#2a2114">+18%</text>
+    <rect x="372" y="144" width="64" height="6" rx="3" fill="#ddd6c6"/>
+  </g>
+</svg>
