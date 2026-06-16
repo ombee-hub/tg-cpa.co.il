@@ -8,7 +8,7 @@
   'use strict';
 
   var TEL = 'tel:+97236888699';
-  var MAIL = 'mailto:office@tg-cpa.co.il';
+  var MAIL = 'mailto:guy@tg-cpa.co.il';
 
   /* ---- אייקונים ---- */
   var icoPhone = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>';
@@ -48,7 +48,7 @@
     '<span class="mark"><img src="images/logo.png" alt="טרוינר גלבר אלוני — רואי חשבון"></span>' +
     '<span class="txt"><b>טרוינר גלבר אלוני</b><small>משרד רואי חשבון</small></span></a>';
   var logoFooter = '<a class="logo" href="index.html">' +
-    '<span class="mark"><img src="images/logo.png" alt="טרוינר גלבר אלוני"></span>' +
+    '<span class="mark"><img src="images/logo-light.png" alt="טרוינר גלבר אלוני"></span>' +
     '<span class="txt"><b>טרוינר · גלבר · אלוני</b><small>רואי חשבון</small></span></a>';
 
   /* ---- מקטעי ה-chrome ---- */
@@ -76,7 +76,7 @@
       '<nav class="drawer-nav">' + navLinks + '</nav>' +
       '<div class="drawer-cta"><a class="btn btn-gold" href="contact.html">יצירת קשר ' + icoSend + '</a></div>' +
       '<div class="drawer-foot">' +
-        '<a href="' + MAIL + '">' + icoMail + 'office@tg-cpa.co.il</a>' +
+        '<a href="' + MAIL + '">' + icoMail + 'guy@tg-cpa.co.il</a>' +
         '<span>' + icoPin + 'בית עובד 8, תל אביב · סניף נתניה</span>' +
       '</div>' +
     '</aside>';
@@ -97,7 +97,7 @@
       '<div><h4>פרטי קשר</h4><ul class="f-contact">' +
         '<li>' + icoPin + '<span>בית עובד 8, תל אביב-יפו<br>סניף נוסף בנתניה</span></li>' +
         '<li>' + icoPhone + '<a href="' + TEL + '">03-688-8699</a></li>' +
-        '<li>' + icoMail + '<a href="' + MAIL + '">office@tg-cpa.co.il</a></li>' +
+        '<li>' + icoMail + '<a href="' + MAIL + '">guy@tg-cpa.co.il</a></li>' +
       '</ul></div>' +
     '</div>' +
     '<div class="foot-bottom">' +
