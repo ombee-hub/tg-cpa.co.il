@@ -1,7 +1,7 @@
 /* =============================================================
    טרוינר · גלבר · אלוני — סקריפט משותף לכל העמודים
    מזריק את ה-Header / תפריט / Footer המשותפים, ומפעיל את ההתנהגויות.
-   * לוגו TG נטען מ-images/logo.png (ו-logo-light.png לפוטר) — להחלפה שנה כאן בלבד.
+   * לוגו TG נטען מ-images/logo-tg-cpa.png (ו-logo-light.png לפוטר) — להחלפה שנה כאן בלבד.
    * תפריט הניווט מוגדר פעם אחת במערך NAV (ללא "בית" — הלוגו מוביל לדף הבית).
    ============================================================= */
 (function () {
@@ -43,7 +43,7 @@
 
   /* ---- לוגו (ללא טקסט בהדר; להחלפת הלוגו הרשמי — שנה את ה-src) ---- */
   var logoHeader = '<a class="logo" href="index.html" aria-label="טרוינר גלבר אלוני — רואי חשבון — דף הבית">' +
-    '<span class="mark"><img src="images/logo.png" alt="טרוינר גלבר אלוני — רואי חשבון"></span>' +
+    '<span class="mark"><img src="images/logo-tg-cpa.png" alt="טרוינר גלבר אלוני — רואי חשבון"></span>' +
     '<span class="txt"><b>טרוינר גלבר אלוני</b><small>משרד רואי חשבון</small></span></a>';
   var logoFooter = '<a class="logo" href="index.html">' +
     '<span class="mark"><img src="images/logo-light.png" alt="טרוינר גלבר אלוני"></span>' +
@@ -68,7 +68,7 @@
     '<div class="drawer-backdrop" id="drawerBackdrop"></div>' +
     '<aside class="drawer" id="mobileNav" aria-label="תפריט ניווט">' +
       '<div class="drawer-head">' +
-        '<span class="drawer-logo"><img src="images/logo.png" alt="טרוינר גלבר אלוני"><b>טרוינר גלבר אלוני</b></span>' +
+        '<span class="drawer-logo"><img src="images/logo-tg-cpa.png" alt="טרוינר גלבר אלוני"><b>טרוינר גלבר אלוני</b></span>' +
         '<button class="drawer-close" id="drawerClose" aria-label="סגירת תפריט">' + icoClose + '</button>' +
       '</div>' +
       '<nav class="drawer-nav">' + navLinks + '</nav>' +
@@ -143,37 +143,11 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ---- חשיפה בגלילה ---- */
-  var revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && revealEls.length) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-    revealEls.forEach(function (el) { io.observe(el); });
-  } else {
-    revealEls.forEach(function (el) { el.classList.add('in'); });
-  }
+  /* ---- תוכן מוצג מיד, ללא אנימציית כניסה (שום דבר לא זז ברענון) ---- */
+  document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
 
-  /* ---- מוני ספירה ---- */
-  var counters = document.querySelectorAll('[data-count]');
-  if ('IntersectionObserver' in window && counters.length) {
-    var cio = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        var el = e.target, target = +el.dataset.count, suffix = el.dataset.suffix || '';
-        var cur = 0, step = Math.max(1, Math.ceil(target / 40));
-        (function tick() {
-          cur += step;
-          if (cur >= target) { el.textContent = target + suffix; }
-          else { el.textContent = cur + suffix; requestAnimationFrame(tick); }
-        })();
-        cio.unobserve(el);
-      });
-    }, { threshold: 0.6 });
-    counters.forEach(function (c) { cio.observe(c); });
-  }
+  /* ---- מספרי סטטיסטיקה מוצגים מיד (ללא ספירה) ---- */
+  document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = el.dataset.count + (el.dataset.suffix || ''); });
 
   /* ---- טופס יצירת קשר (הדגמת צד-לקוח בלבד) ---- */
   var form = document.getElementById('contactForm');
