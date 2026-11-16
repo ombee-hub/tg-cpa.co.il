@@ -107,7 +107,7 @@
         '<a href="#" aria-label="פייסבוק">' + icoFb + '</a>' +
         '<a href="' + MAIL + '" aria-label="אימייל">' + icoMail + '</a>' +
       '</div>' +
-      '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><img class="credit-logo" src="images/ombee-logo-gold.png" alt="OMBee · עיצוב ובנייה"></a></span>' +
+      '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><img class="credit-logo" src="images/ombee-logo.webp" alt="OMBee · עיצוב ובנייה"></a></span>' +
     '</div></div></footer>';
 
   var skip = '<a class="skip" href="#main">דלג לתוכן המרכזי</a>';
@@ -205,7 +205,9 @@
     {cls:'a11y-align-left',label:'יישור טקסט',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6h16M4 12h12M4 18h16"/></svg>'},
     {cls:'a11y-noimg',label:'הסתרת תמונות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m4 19 6-6 3 3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m3 3 18 18"/></svg>'},
     {cls:'a11y-noanim',label:'ביטול הנפשות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/></svg>'},
-    {cls:'a11y-cursor',label:'סמן גדול',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3l15 7-6.5 2.2L11 19z"/></svg>'}
+    {cls:'a11y-cursor',label:'סמן גדול',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3l15 7-6.5 2.2L11 19z"/></svg>'},
+    {cls:'a11y-focus',label:'הדגשת מיקוד',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="7"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>'},
+    {cls:'a11y-headings',label:'הדגשת כותרות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 4v16M18 4v16M6 12h12"/></svg>'}
   ];
   var a11yOpts = A11Y.map(function (o) { return '<button type="button" class="a11y-opt" data-cls="' + o.cls + '" aria-pressed="false">' + o.icon + '<span>' + o.label + '</span></button>'; }).join('');
   var a11yHtml =
