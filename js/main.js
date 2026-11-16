@@ -1,7 +1,7 @@
 /* =============================================================
    טרוינר · גלבר · אלוני — סקריפט משותף לכל העמודים
    מזריק את ה-Header / תפריט / Footer המשותפים, ומפעיל את ההתנהגויות.
-   * לוגו TG נטען מ-images/logo-tg-cpa.png (ו-logo-light.png לפוטר) — להחלפה שנה כאן בלבד.
+   * לוגו TG נטען מ-images/logo-tg-cpa.png (ו-logo-tg-cpa-w.png לפוטר) — להחלפה שנה כאן בלבד.
    * תפריט הניווט מוגדר פעם אחת במערך NAV (ללא "בית" — הלוגו מוביל לדף הבית).
    ============================================================= */
 (function () {
@@ -46,7 +46,7 @@
     '<span class="mark"><img src="images/logo-tg-cpa.png" alt="טרוינר גלבר אלוני — רואי חשבון"></span>' +
     '<span class="txt"><b>טרוינר גלבר אלוני</b><small>משרד רואי חשבון</small></span></a>';
   var logoFooter = '<a class="logo" href="index.html">' +
-    '<span class="mark"><img src="images/logo-light.png" alt="טרוינר גלבר אלוני"></span>' +
+    '<span class="mark"><img src="images/logo-tg-cpa-w.png" alt="טרוינר גלבר אלוני"></span>' +
     '<span class="txt"><b>טרוינר · גלבר · אלוני</b><small>רואי חשבון</small></span></a>';
 
   /* ---- מקטעי ה-chrome ---- */
