@@ -109,7 +109,7 @@
       '<div class="foot-line">' +
         '<span class="foot-copy">© <span id="year"></span> כל הזכויות שמורות לטרוינר, גלבר, אלוני — רואי חשבון</span>' +
         '<span class="foot-legal"><a class="leg" href="accessibility.html">הצהרת נגישות</a><a class="leg" href="privacy.html">מדיניות פרטיות</a></span>' +
-        '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><span class="credit-logo" role="img" aria-label="OMBee · עיצוב ובנייה"></span></a></span>' +
+        '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><img class="credit-logo" src="images/ombee-logo-gold.png" alt="OMBee · עיצוב ובנייה"></a></span>' +
       '</div>' +
     '</div></div></footer>';
 
