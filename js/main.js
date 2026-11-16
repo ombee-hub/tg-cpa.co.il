@@ -1,7 +1,7 @@
 /* =============================================================
    טרוינר · גלבר · אלוני — סקריפט משותף לכל העמודים
    מזריק את ה-Header / תפריט / Footer המשותפים, ומפעיל את ההתנהגויות.
-   * הלוגו נטען מ-images/logo.svg — להחלפה ללוגו הרשמי שנה כאן בלבד.
+   * לוגו TG נטען מ-images/logo.png (ו-logo-light.png לפוטר) — להחלפה שנה כאן בלבד.
    * תפריט הניווט מוגדר פעם אחת במערך NAV (ללא "בית" — הלוגו מוביל לדף הבית).
    ============================================================= */
 (function () {
@@ -107,7 +107,7 @@
         '<a href="#" aria-label="פייסבוק">' + icoFb + '</a>' +
         '<a href="' + MAIL + '" aria-label="אימייל">' + icoMail + '</a>' +
       '</div>' +
-      '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><img class="credit-logo" src="images/ombee-logo.webp" alt="OMBee · עיצוב ובנייה"></a></span>' +
+      '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><span class="credit-logo" role="img" aria-label="OMBee · עיצוב ובנייה"></span></a></span>' +
     '</div></div></footer>';
 
   var skip = '<a class="skip" href="#main">דלג לתוכן המרכזי</a>';
