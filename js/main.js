@@ -101,13 +101,16 @@
       '</ul></div>' +
     '</div>' +
     '<div class="foot-bottom">' +
-      '<span>© <span id="year"></span> כל הזכויות שמורות לטרוינר, גלבר, אלוני — רואי חשבון &nbsp;·&nbsp; <a class="leg" href="accessibility.html">הצהרת נגישות</a> &nbsp;·&nbsp; <a class="leg" href="privacy.html">מדיניות פרטיות</a></span>' +
+      '<div class="foot-line">' +
+        '<span class="foot-copy">© <span id="year"></span> כל הזכויות שמורות לטרוינר, גלבר, אלוני — רואי חשבון</span>' +
+        '<span class="foot-legal"><a class="leg" href="accessibility.html">הצהרת נגישות</a><a class="leg" href="privacy.html">מדיניות פרטיות</a></span>' +
+        '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><span class="credit-logo" role="img" aria-label="OMBee · עיצוב ובנייה"></span></a></span>' +
+      '</div>' +
       '<div class="foot-social">' +
         '<a href="#" aria-label="לינקדאין">' + icoLi + '</a>' +
         '<a href="#" aria-label="פייסבוק">' + icoFb + '</a>' +
         '<a href="' + MAIL + '" aria-label="אימייל">' + icoMail + '</a>' +
       '</div>' +
-      '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><span class="credit-logo" role="img" aria-label="OMBee · עיצוב ובנייה"></span></a></span>' +
     '</div></div></footer>';
 
   var skip = '<a class="skip" href="#main">דלג לתוכן המרכזי</a>';

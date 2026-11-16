@@ -421,18 +421,22 @@ body.nav-open .drawer{transform:none;}
 .footer .f-contact li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;}
 .footer .f-contact svg{width:17px;height:17px;color:var(--gold-2);flex:none;margin-top:4px;}
 .footer .f-contact a:hover{color:var(--gold-2);}
-.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding-block:24px;font-size:13.5px;}
+.foot-bottom{display:flex;flex-direction:column;align-items:center;gap:18px;padding-block:26px;font-size:13.5px;}
+.foot-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 0;width:100%;}
+.foot-copy{padding-inline-end:16px;color:var(--on-dark-muted);}
+.foot-legal{display:inline-flex;align-items:center;gap:16px;padding-inline:16px;border-inline:1px solid rgba(255,255,255,.16);}
 .foot-bottom .credit b{color:var(--on-dark-muted);font-weight:600;}
 .foot-bottom .credit b a{color:var(--gold-2);}
-.foot-bottom .credit{display:inline-flex;align-items:center;gap:9px;color:var(--on-dark-muted);}
+.foot-bottom .credit{display:inline-flex;align-items:center;gap:9px;color:var(--on-dark-muted);padding-inline-start:16px;}
 .credit-logo{display:block;width:118px;height:34px;background:var(--gold-2);-webkit-mask:url("../images/ombee-logo.webp") center/contain no-repeat;mask:url("../images/ombee-logo.webp") center/contain no-repeat;transition:opacity .3s var(--ease);}
 .credit-logo:hover{opacity:.82;}
-.foot-social{display:flex;gap:10px;}
+.foot-social{display:flex;gap:10px;justify-content:center;}
 .foot-social a{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;transition:.3s;}
 .foot-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--ink);}
 .foot-social svg{width:17px;height:17px;}
 @media(max-width:860px){.footer .cols{grid-template-columns:1fr 1fr;gap:34px;}}
-@media(max-width:520px){.footer .cols{grid-template-columns:1fr;}.foot-bottom{justify-content:center;text-align:center;}}
+@media(max-width:640px){.foot-line{flex-direction:column;gap:12px;}.foot-legal{border-inline:0;padding-inline:0;}.foot-copy{padding-inline-end:0;}.foot-bottom .credit{padding-inline-start:0;}}
+@media(max-width:520px){.footer .cols{grid-template-columns:1fr;}.foot-bottom{text-align:center;}}
 
 /* ============================== FLOATING CALL BTN ============================== */
 .fab{position:fixed;inset-block-end:24px;inset-inline-start:24px;z-index:90;display:flex;align-items:center;gap:11px;
