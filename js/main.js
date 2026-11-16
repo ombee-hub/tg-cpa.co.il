@@ -18,8 +18,6 @@
   var icoFb = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>';
   var icoSend = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>';
   var icoClose = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>';
-  var icoAccess = '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="3.9" r="2.1"/><path d="M21 8.7c0 .58-.49 1.03-1.07.96L15 9.02v3.1l2.4 7.05a1.15 1.15 0 0 1-2.17.74L12.6 14h-1.2l-2.63 5.9a1.15 1.15 0 0 1-2.17-.73L9 12.12V9.02l-4.93.64A.97.97 0 0 1 3 8.7c0-.5.38-.91.87-.96L11 6.9h2l7.13.84c.49.05.87.46.87.96Z"/></svg>';
-  var icoReset = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 2.6-6.4L3 8"/><path d="M3 3v5h5"/></svg>';
 
   /* ---- ניווט (ללא "בית" — לחיצה על הלוגו מובילה הביתה) ---- */
   var NAV = [
@@ -195,51 +193,4 @@
     });
   }
 
-  /* ===== accessibility widget ===== */
-  var A11Y = [
-    {cls:'a11y-contrast',label:'ניגודיות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg>'},
-    {cls:'a11y-bigtext',label:'טקסט גדול',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 19 9 5l6 14M5.2 14.5h7.6"/><path d="M16.5 10h5M19 10v9M16.5 19h5"/></svg>'},
-    {cls:'a11y-links',label:'הדגשת קישורים',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 1 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 1 0 7 7l1.5-1.5"/></svg>'},
-    {cls:'a11y-spacing',label:'ריווח טקסט',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 5h18M3 19h18M8 9 5 12l3 3M16 9l3 3-3 3M6 12h12"/></svg>'},
-    {cls:'a11y-lineheight',label:'גובה שורה',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 6h12M9 12h12M9 18h12M4 4v16M2 6l2-2 2 2M2 18l2 2 2-2"/></svg>'},
-    {cls:'a11y-dyslexia',label:'תמיכה בדיסלקציה',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>'},
-    {cls:'a11y-readable',label:'גופן קריא',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 7V5h14v2M12 5v14M9 19h6"/></svg>'},
-    {cls:'a11y-grayscale',label:'רוויה',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3s7 6.4 7 11a7 7 0 0 1-14 0c0-4.6 7-11 7-11Z"/></svg>'},
-    {cls:'a11y-align-left',label:'יישור טקסט',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6h16M4 12h12M4 18h16"/></svg>'},
-    {cls:'a11y-noimg',label:'הסתרת תמונות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m4 19 6-6 3 3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m3 3 18 18"/></svg>'},
-    {cls:'a11y-noanim',label:'ביטול הנפשות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/></svg>'},
-    {cls:'a11y-cursor',label:'סמן גדול',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3l15 7-6.5 2.2L11 19z"/></svg>'},
-    {cls:'a11y-focus',label:'הדגשת מיקוד',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="7"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>'},
-    {cls:'a11y-headings',label:'הדגשת כותרות',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 4v16M18 4v16M6 12h12"/></svg>'}
-  ];
-  var a11yOpts = A11Y.map(function (o) { return '<button type="button" class="a11y-opt" data-cls="' + o.cls + '" aria-pressed="false">' + o.icon + '<span>' + o.label + '</span></button>'; }).join('');
-  var a11yHtml =
-    '<button class="a11y-fab" id="a11yFab" aria-label="פתיחת תפריט נגישות" aria-haspopup="dialog">' + icoAccess + '</button>' +
-    '<div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="הגדרות נגישות">' +
-      '<div class="a11y-head"><h2>' + icoAccess + 'נגישות</h2><button class="a11y-x" id="a11yX" aria-label="סגירת תפריט נגישות">' + icoClose + '</button></div>' +
-      '<div class="a11y-body"><div class="a11y-grid">' + a11yOpts + '</div></div>' +
-      '<div class="a11y-foot">' +
-        '<button type="button" class="a11y-reset" id="a11yReset">' + icoReset + 'איפוס הגדרות נגישות</button>' +
-        '<div class="a11y-links"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a></div>' +
-      '</div>' +
-    '</div>';
-  document.body.insertAdjacentHTML('beforeend', a11yHtml);
-
-  var A11Y_KEY = 'tg-a11y';
-  function a11yGet() { try { return JSON.parse(localStorage.getItem(A11Y_KEY)) || {}; } catch (e) { return {}; } }
-  function a11ySave(s) { try { localStorage.setItem(A11Y_KEY, JSON.stringify(s)); } catch (e) {} }
-  function a11yApply() {
-    var s = a11yGet();
-    A11Y.forEach(function (o) { body.classList.toggle(o.cls, !!s[o.cls]); });
-    document.querySelectorAll('.a11y-opt').forEach(function (b) { var on = !!s[b.dataset.cls]; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
-  }
-  document.querySelectorAll('.a11y-opt').forEach(function (b) {
-    b.addEventListener('click', function () { var s = a11yGet(); s[b.dataset.cls] = !s[b.dataset.cls]; a11ySave(s); a11yApply(); });
-  });
-  var aFab = document.getElementById('a11yFab'), aX = document.getElementById('a11yX'), aReset = document.getElementById('a11yReset');
-  if (aFab) aFab.addEventListener('click', function () { body.classList.toggle('a11y-open'); });
-  if (aX) aX.addEventListener('click', function () { body.classList.remove('a11y-open'); });
-  if (aReset) aReset.addEventListener('click', function () { a11ySave({}); a11yApply(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') body.classList.remove('a11y-open'); });
-  a11yApply();
 })();
