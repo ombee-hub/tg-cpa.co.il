@@ -85,6 +85,11 @@
     '<footer class="footer"><div class="wrap"><h2 class="footer-title">מפת האתר</h2><div class="cols">' +
       '<div>' + logoFooter +
         '<p class="f-about">משרד רואי חשבון המלווה חברות, עסקים ועצמאים מאז 1996 — בביקורת, ייעוץ מס, הנהלת חשבונות וליווי עסקי אישי. סניפים בתל אביב ובנתניה.</p>' +
+        '<div class="foot-social">' +
+          '<a href="#" aria-label="לינקדאין">' + icoLi + '</a>' +
+          '<a href="#" aria-label="פייסבוק">' + icoFb + '</a>' +
+          '<a href="' + MAIL + '" aria-label="אימייל">' + icoMail + '</a>' +
+        '</div>' +
       '</div>' +
       '<div><h4>ניווט</h4><ul>' + footNav + '</ul></div>' +
       '<div><h4>שירותים</h4><ul>' +
@@ -105,11 +110,6 @@
         '<span class="foot-copy">© <span id="year"></span> כל הזכויות שמורות לטרוינר, גלבר, אלוני — רואי חשבון</span>' +
         '<span class="foot-legal"><a class="leg" href="accessibility.html">הצהרת נגישות</a><a class="leg" href="privacy.html">מדיניות פרטיות</a></span>' +
         '<span class="credit">עיצוב ובנייה ע״י: <a href="https://ombee.co.il" target="_blank" rel="noopener"><span class="credit-logo" role="img" aria-label="OMBee · עיצוב ובנייה"></span></a></span>' +
-      '</div>' +
-      '<div class="foot-social">' +
-        '<a href="#" aria-label="לינקדאין">' + icoLi + '</a>' +
-        '<a href="#" aria-label="פייסבוק">' + icoFb + '</a>' +
-        '<a href="' + MAIL + '" aria-label="אימייל">' + icoMail + '</a>' +
       '</div>' +
     '</div></div></footer>';
 
